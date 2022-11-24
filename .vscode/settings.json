@@ -2,5 +2,21 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/home/maity/Downloads/mysql-connector-j-8.0.31.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "connectionTimeout": 15,
+            "password": "1Q2w3e4r@",
+            "username": "maity",
+            "database": "jdbc-simple-project",
+            "name": "MySQL Local"
+        }
     ]
 }
