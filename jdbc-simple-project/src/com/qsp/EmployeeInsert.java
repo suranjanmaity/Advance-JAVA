@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Employee {
+public class EmployeeInsert {
 
     public static void main(String[] args) {
         
@@ -21,18 +21,16 @@ public class Employee {
             String pass = "1Q2w3e4r@";
 
             conn = DriverManager.getConnection(url, user, pass);
+            System.out.println("Connection made : "+conn);
 
             // step 3 create the statement
             Statement statement = conn.createStatement();
 
             // step 4 execute query
-            String insert = "insert into employee values(1000, 'ram', 'ram@gmail.com')";
+            String insert = "insert into employee values(1002, 'ramurao', 'ramurao@gmail.com')";
             statement.execute(insert);
             System.out.println("inserted...");
 
-
-
-            System.out.println(conn);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
@@ -41,6 +39,7 @@ public class Employee {
             // step 5 close the connection
             try {
                 conn.close();
+                System.out.println("Connection made : "+conn);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
