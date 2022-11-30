@@ -18,5 +18,6 @@
             "database": "jdbc-simple-project",
             "name": "MySQL Local"
         }
-    ]
+    ],
+    "java.dependency.syncWithFolderExplorer": false
 }
