@@ -17,4 +17,20 @@ public class LaptopService {
             System.out.println("price is too high");
         }
     }
+    public void updateLaptop(Laptop laptop) {
+        LaptopDao dao = new LaptopDao();
+        dao.updateLaptop(laptop);
+    }
+
+
+    public void deleteLaptop(Laptop laptop) {
+        LaptopDao dao = new LaptopDao();
+        dao.deleteLaptop(laptop);
+    }
+
+
+    public void displayLaptop() {
+        LaptopDao dao = new LaptopDao();
+        dao.displayLaptop();
+    }
 }

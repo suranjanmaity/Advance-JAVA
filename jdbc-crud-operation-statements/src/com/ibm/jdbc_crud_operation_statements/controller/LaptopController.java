@@ -29,7 +29,30 @@ public class LaptopController {
                         laptopService.insertLaptop(laptop);
                         break;
                     }
-                
+                    // update
+                    case 2:{
+                        System.out.println("enter laptopId");
+                        laptop.setId(scanner.nextInt());
+                        System.out.println("enter laptopName");
+                        laptop.setName(scanner.next());
+                        
+                        laptopService.updateLaptop(laptop);
+                        break;
+                    }
+                    // delete
+                    case 3:{
+                        System.out.println("enter laptopId");
+                        laptop.setId(scanner.nextInt());
+
+                        laptopService.deleteLaptop(laptop);
+                        break;
+                    }
+                    // display
+                    case 4:{
+                        laptopService.displayLaptop();
+                        break;
+                    }
+                    
                     default:{
                         System.out.println("invalid choice.\n");
                         break;
