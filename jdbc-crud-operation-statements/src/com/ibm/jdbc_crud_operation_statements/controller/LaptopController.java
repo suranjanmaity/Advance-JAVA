@@ -30,7 +30,7 @@ public class LaptopController {
                         break;
                     }
                     // update
-                    case 2:{
+                    case 2: {
                         System.out.println("enter laptopId");
                         laptop.setId(scanner.nextInt());
                         System.out.println("enter laptopName");
